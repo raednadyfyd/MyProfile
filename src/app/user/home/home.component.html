@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div id="Homecarousel" class="carousel slide" data-bs-ride="carousel" [attr.data-bs-interval]="interval" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}" 
+           [ngStyle]="{'background-image': 'url(' + slide.imageUrl + ')', 'background-size': 'cover', 'background-position': 'center'}">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 slider-text js-fullheight">
+              <div class="slider-text-inner">
+                <div class="desc">
+                  <h1 style="color: blue;">{{ slide.title }}</h1>
+                  <h2 style="color: blue;">{{ slide.description }}</h2>
+                  <p>
+                    <a [href]="slide.buttonLink" class="btn btn-primary btn-learn">{{ slide.buttonText }}
+                      <i [class]="slide.buttonIcon"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

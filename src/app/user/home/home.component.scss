@@ -1,0 +1,46 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.slider-text-inner {
+  text-align: center;
+  color: white;
+}
+
+.btn-learn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-text-inner h1 {
+    font-size: 2.5rem;
+  }
+
+  .slider-text-inner h2 {
+    font-size: 1.5rem;
+  }
+}
