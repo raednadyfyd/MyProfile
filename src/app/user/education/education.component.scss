@@ -1,0 +1,16 @@
+.card {
+    transition: max-height 0.5s ease;
+}
+
+.collapse {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.show {
+    max-height: 200px; /* Adjust according to your content height */
+}
+
+span {
+    cursor: pointer; /* Change cursor to pointer for icons */
+}

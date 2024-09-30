@@ -1,1 +1,23 @@
-<p>education works!</p>
+<div class="container mt-5">
+    <h2>Education Background</h2>
+    <div *ngFor="let item of educationData">
+        <button class="btn w-100 d-flex justify-content-between align-items-center" 
+                [style.backgroundColor]="item.buttonColor" 
+                [style.color]="'white'" 
+                (click)="toggleCollapse(item)" 
+                [attr.aria-expanded]="!item.isCollapsed" 
+                [attr.aria-controls]="'collapseExample' + item.id">
+            <span class="text-start">{{item.title}}</span>
+            <span>
+                <i class="bi" [ngClass]="item.isCollapsed ? 'bi-plus' : 'bi-dash'"></i>
+            </span>
+        </button>
+        
+        <div [ngClass]="{'collapse': item.isCollapsed, 'show': !item.isCollapsed}" 
+             [attr.id]="'collapseExample' + item.id">
+            <div class="card card-body">
+                {{item.description}}
+            </div>
+        </div>
+    </div>
+</div>
