@@ -1,0 +1,21 @@
+/* src/app/footer/footer.component.css */
+.colorlib-footer {
+    background-color: #f1f1f1; /* Light gray background */
+    border-top: 1px solid #e7e7e7; /* Optional: add a top border */
+    padding: 10px 0; /* Reduced padding for less height */
+    text-align: center; /* Center text */
+  }
+  
+  .icon-facebook-f,
+  .icon-twitter,
+  .icon-instagram,
+  .icon-linkedin-in {
+    font-size: 18px; /* Adjust icon size as needed */
+    color: #007bff; /* Change color for icons */
+    margin: 0 5px; /* Space between icons */
+  }
+  
+  .list-inline-item a {
+    color: inherit; /* Inherit color from parent */
+  }
+  

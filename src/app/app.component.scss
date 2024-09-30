@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set min height to fill the viewport */
+}
+
+.row {
+    flex: 1; /* This allows the row to grow and take available space */
+}
+
+app-sidebar {
+    /* Ensure the sidebar has a fixed width */
+    width: 250px; /* Adjust width as needed */
+}
+
+app-footer {
+    /* Ensure the footer stays at the bottom */
+    background-color: #f8f9fa; /* Same background as the footer */
+}
+
+.py-4 {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
