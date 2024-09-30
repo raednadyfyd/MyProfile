@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent {
+ 
+  activeTab = 'graphic'; // Default active tab
+
+  setActiveTab(tab: string) {
+    this.activeTab = tab;
+  }
 
 }
