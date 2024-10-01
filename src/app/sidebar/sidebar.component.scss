@@ -1,4 +1,21 @@
+/* src/app/sidebar/sidebar.component.css */
+
 .sidebar {
-  height: 100%; /* Ensure it takes full height of the viewport */
-  background-color: #6c757d; /* Custom gray color */
+  height: 100vh; /* Make sidebar full height of the viewport */
+}
+
+.nav-link {
+  display: block;           /* Make the links block elements */
+  width: 100%;             /* Set width to 100% of the parent */
+  padding: 10px;          /* Add padding for better spacing */
+  color: inherit;          /* Inherit color from parent */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: Add hover effect */
+}
+
+.active {
+  font-weight: bold;       /* Bold style for active link */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: Highlight active link */
 }
